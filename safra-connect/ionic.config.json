@@ -1,0 +1,7 @@
+{
+  "name": "safra-connect",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

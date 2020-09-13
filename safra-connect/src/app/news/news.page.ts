@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['news.page.scss']
 })
 export class NewsPage {
-
+  publ = false;
     noticias = [
       {
         nome: 'Ana Maria',
@@ -60,6 +60,7 @@ export class NewsPage {
       }
     ];
 
+   
   constructor() {}
 
   ionViewWillEnter() {}

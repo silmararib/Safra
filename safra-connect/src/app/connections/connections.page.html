@@ -13,5 +13,26 @@
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Connections"></app-explore-container>
+  <ion-avatar class="avatar">
+    <img src="./assets/user_prof.png">
+  </ion-avatar>
+<div class="user">
+  
+  <h1 [routerLink]="['/user']" class="name">Sofia</h1>
+  <h2 class="name">Brasileira conectada e amante da praia. </h2>
+</div>
+
+<div >
+  <h1 class="name">Amigos</h1>
+  <ion-avatar class="avatar">
+    <img src="./assets/friend.png">
+  </ion-avatar>
+  <div class="body">
+  
+  <h2 [routerLink]="['/user-friend']" class="name">Léo </h2>
+</div>
+<ion-button expand="block" color="secondary">Pagar</ion-button>
+<ion-button expand="block" color="medium">Criar rateio</ion-button>
+</div>
+<!-- <app-explore-container name="Connections"></app-explore-container> -->
 </ion-content>

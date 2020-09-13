@@ -30,7 +30,15 @@ const routes: Routes = [
   {
     path: 'tabs',
     loadChildren: () => import('./tabs/tabs.module').then( m => m.TabsPageModule)
+  },  {
+    path: 'user',
+    loadChildren: () => import('./user/user.module').then( m => m.UserPageModule)
   },
+  {
+    path: 'user-friend',
+    loadChildren: () => import('./user-friend/user-friend.module').then( m => m.UserFriendPageModule)
+  },
+
 ];
 
 @NgModule({

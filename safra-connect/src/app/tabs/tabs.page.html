@@ -1,12 +1,12 @@
 <ion-toolbar color="tertiary">
   <ion-buttons [routerLink]="['/profile']"  slot="start">
     <ion-avatar>
-      <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
+      <img src="./assets/user_prof.png">
     </ion-avatar>
   </ion-buttons>
   <ion-buttons slot="primary">
-    <ion-button>
-      <ion-icon slot="icon-only" name="search"></ion-icon>
+    <ion-button [routerLink]="['/']">
+      <ion-icon name="log-out-outline"></ion-icon>
     </ion-button>
   </ion-buttons>
   <ion-title>Safra Connect</ion-title>

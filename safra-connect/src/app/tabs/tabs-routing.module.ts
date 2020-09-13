@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 import { TabsPage } from './tabs.page';
 
 const routes: Routes = [
@@ -8,41 +8,34 @@ const routes: Routes = [
     component: TabsPage,
     children: [
       {
-        path: 'news',
-        loadChildren: () => import('../news/news.module').then(m => m.NewsPageModule)
+        path: 'tab1',
+        loadChildren: () => import('../tab1/tab1.module').then(m => m.Tab1PageModule)
       },
       {
-        path: 'connections',
-        loadChildren: () => import('../connections/connections.module').then(m => m.ConnectionsPageModule)
+        path: 'tab2',
+        loadChildren: () => import('../tab2/tab2.module').then(m => m.Tab2PageModule)
       },
       {
-        path: 'finances',
-        loadChildren: () => import('../finances/finances.module').then(m => m.FinancesPageModule)
-      },
-      {
-        path: 'sharedexpenses',
-        loadChildren: () => import('../shared-expenses/shared-expenses.module').then(m => m.SharedExpensesPageModule)
-      },
-      {
-        path: 'settings',
-        loadChildren: () => import('../settings/settings.module').then(m => m.SettingsPageModule)
+        path: 'tab3',
+        loadChildren: () => import('../tab3/tab3.module').then(m => m.Tab3PageModule)
       },
       {
         path: '',
-        redirectTo: '/tabs/news',
+        redirectTo: '/tabs/tab1',
         pathMatch: 'full'
       }
     ]
   },
   {
     path: '',
-    redirectTo: '/tabs/news',
-    pathMatch: 'full'
+    loadChildren: () => import('../tabs/tabs.module').then(m => m.TabsPageModule)
   }
 ];
 
 @NgModule({
-  imports: [RouterModule.forChild(routes)],
+  imports: [RouterModule.forChild(routes),
+    RouterModule.forRoot(routes, { preloadingStrategy: PreloadAllModules })
+  ],
   exports: [RouterModule]
 })
 export class TabsPageRoutingModule {}

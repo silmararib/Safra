@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Safra Connect
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="auth-form">
+  <ion-grid>
+    <ion-row>
+      <ion-col align-self-center>
+        <span class="come">Venha se conectar!</span>
+        
+        <ion-button [routerLink]="['/sign']" expand="block" color="primary">Crir Conta</ion-button>
+
+        <span class="divider line one-line">ou</span>
+
+        <span class="already">Já tem uma conta?</span>
+
+        <ion-button [routerLink]="['/login']" expand="block" color="danger">Acessar Connect</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

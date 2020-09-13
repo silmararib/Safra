@@ -1,5 +1,8 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
     <ion-title>
       Configurações
     </ion-title>
@@ -17,6 +20,70 @@
   </ion-header>
 
   
+
   
-  <app-explore-container name="Settings"></app-explore-container>
+  <ion-list>
+    <ion-list-header>Configurações de exibição e privacidade</ion-list-header>
+      <ion-item>
+        <ion-label>Demonstrar badges</ion-label>
+        <ion-checkbox color="primary" checked slot="start"></ion-checkbox>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Demonstrar desempenho financeiro</ion-label>
+        <ion-checkbox color="primary" checked slot="start"></ion-checkbox>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Demonstrar publicações</ion-label>
+        <ion-checkbox color="primary" checked slot="start"></ion-checkbox>
+      </ion-item>
+      
+
+      </ion-list>
+
+      <header>Editar dados pessoais</header>
+      
+  <!-- <app-explore-container name="Settings"></app-explore-container> -->
+  <form>
+    <ion-item lines="full">
+      <ion-label position="floating">Primeiro nome</ion-label>
+      <ion-input type="text" required></ion-input>
+    </ion-item>
+
+    <ion-item lines="full">
+      <ion-label position="floating">Último nome</ion-label>
+      <ion-input type="text" required></ion-input>
+    </ion-item>
+
+    <ion-item lines="full">
+      <ion-label position="floating">Email</ion-label>
+      <ion-input type="text" required></ion-input>
+    </ion-item>
+
+    <ion-item lines="full">
+      <ion-label position="floating">Senha</ion-label>
+      <ion-input type="password" required></ion-input>
+    </ion-item>
+
+    <div >
+    
+      <h3 >Possui uma conta Safra?</h3>
+      
+    </div>
+
+    <ion-item lines="full">
+      <ion-label position="floating">Conta Safra</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+    <ion-item lines="full">
+      <ion-label position="floating">Agência Safra</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+    <ion-row>
+      <ion-col>
+        <ion-button type="submit" color="secondary" expand="block">Atualizar dados</ion-button>
+      </ion-col>
+    </ion-row>
+  </form>
 </ion-content>

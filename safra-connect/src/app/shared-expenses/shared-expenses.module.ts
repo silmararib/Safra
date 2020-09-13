@@ -6,7 +6,7 @@ import { FormsModule } from '@angular/forms';
 import { SharedExpensesPage } from './shared-expenses.page';
 import { ExploreContainerComponentModule } from '../explore-container/explore-container.module';
 
-import { SharedExpensesPageRoutingModule } from './shared-expenses-routing.module'
+import { SharedExpensesDetailPageRoutingModule } from './shared-expenses-routing.module'
 
 @NgModule({
   imports: [
@@ -15,7 +15,7 @@ import { SharedExpensesPageRoutingModule } from './shared-expenses-routing.modul
     FormsModule,
     ExploreContainerComponentModule,
     RouterModule.forChild([{ path: '', component: SharedExpensesPage }]),
-    SharedExpensesPageRoutingModule,
+    SharedExpensesDetailPageRoutingModule,
   ],
   declarations: [SharedExpensesPage]
 })

@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { SharedExpensesPage } from './shared-expenses.page';
+import { SharedExpensesDetailPage } from './shared-expenses-detail.page';
 
 const routes: Routes = [
   {
     path: '',
-    component: SharedExpensesPage,
+    component: SharedExpensesDetailPage
   }
 ];
 

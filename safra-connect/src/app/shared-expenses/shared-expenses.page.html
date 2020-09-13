@@ -13,7 +13,7 @@
     </ion-toolbar>
   </ion-header>
 
-  <ion-card *ngFor='let rateio of rateios'>    
+  <ion-card *ngFor='let rateio of rateios' [routerLink]="['/shared-expenses']">    
     <ion-chip>
       <ion-avatar>
         <ion-img [src]="rateio.foto"></ion-img>

@@ -39,7 +39,10 @@ const routes: Routes = [
     path: 'connection',
     loadChildren: () => import('./connections/connection-detail/connection-detail.module').then( m => m.ConnectionDetailPageModule)
   },
-
+  {
+    path: 'shared-expenses',
+    loadChildren: () => import('./shared-expenses/shared-expenses-detail/shared-expenses-detail.module').then( m => m.SharedExpensesDetailPageModule)
+  }
 ];
 
 @NgModule({

@@ -6,7 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['finances.page.scss']
 })
 export class FinancesPage {
+  saldo = false;
+  transf = false;
 
+  metas = [
+    {
+      id: 'Objetivo',
+      texto: 'Progresso no Objetivo',
+      foto: './assets/jouney_user.png'
+    }];
   constructor() {}
 
 }

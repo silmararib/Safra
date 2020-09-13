@@ -12,6 +12,51 @@
       <ion-title size="large">Tab 3</ion-title>
     </ion-toolbar>
   </ion-header>
+  <ion-card>
+    <ion-card-title color = "medium"> Acompanhamento de Meta </ion-card-title>
+    <ion-img src="./assets/dash.png"></ion-img>
+  </ion-card>
+   
+   
+   <ion-card>
+    <ion-card-title color = "secondary"> Safra Wallet </ion-card-title>
+    
+    <ion-button expand="full" (click)="saldo = !saldo">
+      <span>SALDO</span>
+      <ion-icon id="saldoIcon" name="arrow-dropdown" slot="end"></ion-icon>
+  </ion-button>
 
-  <app-explore-container name="Finances"></app-explore-container>
+  <ion-text id="saldo" *ngIf="saldo">
+      SALDO É DE: R$ 
+  </ion-text>
+
+  <ion-button expand="full" (click)="transf = !transf">
+    <span>TRANSFERÊNCIA</span>
+    <ion-icon id="TRANSFIcon" name="arrow-dropdown" slot="end"></ion-icon>
+</ion-button>
+
+<ion-card id="tranf" *ngIf="transf">
+  <span>Selecionar Amigo:</span>
+  <form>
+    <ion-item lines="full">
+      
+
+      <select ng-model="Selecionar amigo" ng-change="showSelectValue(mySelect)">
+        <option>João Pedro</option>
+        
+    </select>
+    </ion-item>
+
+    <ion-row>
+      <ion-col>
+        <ion-button type="submit" color="medium"  expand="block">Transferir</ion-button>
+
+      </ion-col>
+    </ion-row>
+  </form>
+</ion-card>
+  
+  </ion-card>
+   
+  <!-- <app-explore-container name="Finances"></app-explore-container> -->
 </ion-content>

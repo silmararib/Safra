@@ -13,6 +13,31 @@
       <ion-title size="large">Bem-vindo!</ion-title>
     </ion-toolbar>
   </ion-header>
+  <ion-card>
+    <ion-card-title color = "medium"> Progresso </ion-card-title>
+    <ion-img src="./assets/jorney_user.png"></ion-img>
+  </ion-card>
+
+  <ion-button expand="full" (click)="transf = !publ">
+    <span>PUBLICAR</span>
+    <ion-icon id="publIcon" name="arrow-dropdown" slot="end"></ion-icon>
+</ion-button>
+
+<ion-card id="publ" *ngIf="publ">
+  <form>
+    <ion-item lines="full">
+      <ion-label position="floating">Digite aqui</ion-label>
+      <ion-input type="text" required></ion-input>
+    </ion-item>
+
+    <ion-row>
+      <ion-col>
+        <ion-button type="submit" color="medium"  expand="block">Publicar</ion-button>
+
+      </ion-col>
+    </ion-row>
+  </form>
+</ion-card>
 
   <ion-card *ngFor='let noticia of noticias'>    
     <ion-chip>

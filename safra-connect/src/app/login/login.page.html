@@ -1,4 +1,4 @@
-<ion-header>
+<!-- <ion-header>
   <ion-toolbar>
     <ion-buttons slot="start">
       <ion-back-button></ion-back-button>
@@ -27,5 +27,36 @@
       </ion-col>
     </ion-row>
   </form>
-</ion-content>
+</ion-content> -->
 
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title> </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<div class="content">
+  <h1>Login</h1>
+  <form>
+    <ion-item lines="full">
+      <ion-label position="floating">E-mail</ion-label>
+      <ion-input type="text" required></ion-input>
+    </ion-item>
+
+    <ion-item lines="full">
+      <ion-label position="floating">Senha</ion-label>
+      <ion-input type="password" required></ion-input>
+    </ion-item>
+
+    <ion-row>
+      <ion-col>
+        <ion-button [routerLink]="['/tabs']" type="submit" color="medium"  expand="block">Acessar</ion-button>
+
+        <a [routerLink]="['/password']" class="small-text">Esqueceu a senha?</a>
+      </ion-col>
+    </ion-row>
+  </form>
+</div>

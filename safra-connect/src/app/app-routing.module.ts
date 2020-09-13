@@ -30,13 +30,14 @@ const routes: Routes = [
   {
     path: 'tabs',
     loadChildren: () => import('./tabs/tabs.module').then( m => m.TabsPageModule)
-  },  {
-    path: 'user',
-    loadChildren: () => import('./user/user.module').then( m => m.UserPageModule)
   },
   {
-    path: 'user-friend',
-    loadChildren: () => import('./user-friend/user-friend.module').then( m => m.UserFriendPageModule)
+    path: 'profile',
+    loadChildren: () => import('./profile/profile.module').then( m => m.ProfilePageModule)
+  },
+  {
+    path: 'connection',
+    loadChildren: () => import('./connections/connection-detail/connection-detail.module').then( m => m.ConnectionDetailPageModule)
   },
 
 ];

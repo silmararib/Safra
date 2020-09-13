@@ -7,32 +7,26 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
+  
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
+      <ion-title size="large">Bem-vindo!</ion-title>
     </ion-toolbar>
   </ion-header>
 
-  <ion-avatar class="avatar">
-    <img src="./assets/user_prof.png">
-  </ion-avatar>
-<div class="user">
-  
-  <h1 [routerLink]="['/user']" class="name">Sofia</h1>
-  <h2 class="name">Brasileira conectada e amante da praia. </h2>
-</div>
+  <ion-card *ngFor='let conexao of conexoes' [routerLink]="['/connection']">    
+    <ion-chip>
+      <ion-avatar>
+        <ion-img [src]="conexao.foto"></ion-img>
+      </ion-avatar>
+      <ion-label>{{ conexao.nome }}</ion-label>
+    </ion-chip>
 
-<div >
-  <h1 class="name">Amigos</h1>
-  <ion-avatar class="avatar">
-    <img src="./assets/friend.png">
-  </ion-avatar>
-  <div class="body">
+    <ion-card-content>
+      <ion-label>    
+        {{ conexao.texto }}
+      </ion-label>    
+    </ion-card-content>
+  </ion-card>
   
-  <h2 [routerLink]="['/user-friend']" class="name">Léo </h2>
-</div>
-<ion-button expand="block" color="secondary">Pagar</ion-button>
-<ion-button expand="block" color="medium">Criar rateio</ion-button>
-</div>
-<!-- <app-explore-container name="Connections"></app-explore-container> -->
 </ion-content>

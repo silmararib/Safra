@@ -1,3 +1,4 @@
+<!--
 <ion-header>
   <ion-toolbar>
     <ion-title>
@@ -5,22 +6,23 @@
     </ion-title>
   </ion-toolbar>
 </ion-header>
+-->
 
 <ion-content class="auth-form">
   <ion-grid>
     <ion-row>
       <ion-col align-self-center>
-        <span class="come">Venha se conectar!</span>
+        <!-- <span class="come">Venha se conectar!</span> -->
         
-        <ion-img src="./assets/Safra1b.png"></ion-img>
-
-        <ion-button [routerLink]="['/sign']" expand="block" color="secondary">Criar Conta</ion-button>
-
+        <ion-img src="./assets/Logo/Safra1b.png"></ion-img>
+  
+        <ion-button [routerLink]="['/sign']" expand="block" color="primary">Criar Conta</ion-button>
+      
         <span class="divider line one-line">ou</span>
 
         <span class="already">Já tem uma conta?</span>
 
-        <ion-button [routerLink]="['/login']" expand="block" color="medium">Acessar Connect</ion-button>
+        <ion-button [routerLink]="['/login']" expand="block" color="primary">Acessar Connect</ion-button>
       </ion-col>
     </ion-row>
   </ion-grid>

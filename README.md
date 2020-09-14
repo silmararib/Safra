@@ -1,4 +1,13 @@
 # Safra Connect
+Apk: https://drive.google.com/file/d/1oFo6IPw8wd7Qt-3N_PpRIpM3yp_TwafJ/view?usp=sharing
+
+## Requisitos
+Node v12.16.3
+npm JavaScript 6.14.4
+Angular 10.1.1
+Cordova 0.15.1
+Ionic/cli 6.11.8
+native-run 1.1.0
 
 ## Introdução
 

@@ -8,11 +8,7 @@
 
 <ion-content [fullscreen]="true">
   
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Bem-vindo!</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-list-header>Minhas conexões</ion-list-header>
 
   <ion-card *ngFor='let conexao of conexoes' [routerLink]="['/connection']">    
     <ion-chip>

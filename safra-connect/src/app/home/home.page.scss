@@ -28,9 +28,11 @@
     }
 }
 
+ion-content {
+    --background: #ffff00 url('../../assets/Fundo/Safra11.png') no-repeat right bottom / cover !important;
+}
+
 .auth-form{
-    background: #ffffff;
-    height: 100%;
     display: flex;
     flex-direction:column;
     justify-content: space-between;

@@ -1,15 +1,10 @@
 .content{
-    height: 100%;
-    width: 100%;
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0 1em;
-    background-image: url("../../assets/Fundo/Safra7.png");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    text-align: center;
-    color: white;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    padding:5em 1em 10em 1em;
+}
+
+ion-content {
+    --background: #ffff00 url('../../assets/Fundo/Safra11.png') no-repeat right bottom / cover !important;
 }

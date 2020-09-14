@@ -1,50 +1,33 @@
-<ion-header [translucent]="true">
+<ion-header [translucent]="false">
   <ion-toolbar>
     <ion-buttons slot="start">
       <ion-back-button></ion-back-button>
     </ion-buttons>
-    <ion-title>
-      Configurações
-    </ion-title>
+
   </ion-toolbar>
 </ion-header>
 
-
-
-
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 3</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  
-
-  
   <ion-list>
-    <ion-list-header>Configurações de exibição e privacidade</ion-list-header>
-      <ion-item>
-        <ion-label>Demonstrar badges</ion-label>
-        <ion-checkbox color="primary" checked slot="start"></ion-checkbox>
-      </ion-item>
+    <ion-list-header>Exibição e privacidade</ion-list-header>
+    <ion-item>
+      <ion-label>Exibir badges</ion-label>
+      <ion-checkbox color="primary" checked slot="start"></ion-checkbox>
+    </ion-item>
 
-      <ion-item>
-        <ion-label>Demonstrar desempenho financeiro</ion-label>
-        <ion-checkbox color="primary" checked slot="start"></ion-checkbox>
-      </ion-item>
+    <ion-item>
+      <ion-label>Exibir desempenho</ion-label>
+      <ion-checkbox color="primary" checked slot="start"></ion-checkbox>
+    </ion-item>
 
-      <ion-item>
-        <ion-label>Demonstrar publicações</ion-label>
-        <ion-checkbox color="primary" checked slot="start"></ion-checkbox>
-      </ion-item>
+    <ion-item>
+      <ion-label>Exibir publicações</ion-label>
+      <ion-checkbox color="primary" checked slot="start"></ion-checkbox>
+    </ion-item> 
+  </ion-list>
+
+  <ion-list-header>Editar dados pessoais</ion-list-header>
       
-
-      </ion-list>
-
-      <header>Editar dados pessoais</header>
-      
-  <!-- <app-explore-container name="Settings"></app-explore-container> -->
   <form>
     <ion-item lines="full">
       <ion-label position="floating">Primeiro nome</ion-label>
@@ -67,7 +50,7 @@
     </ion-item>
 
        
-      <ion-header >Possui uma conta Safra?</ion-header>
+      <ion-list-header>Possui uma conta Safra?</ion-list-header>
       
    
     <ion-item lines="full">
@@ -80,7 +63,7 @@
     </ion-item>
     <ion-row>
       <ion-col>
-        <ion-button type="submit" color="secondary" expand="block">Atualizar dados</ion-button>
+        <ion-button type="submit" color="primary" expand="block">Atualizar dados</ion-button>
       </ion-col>
     </ion-row>
   </form>
